@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+        <style>
+            div, span{margin: 20px;}
+            span{color: red;}
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>jQuery Event</h1>
+        </center>
+        <hr>
+
+        <div>
+            <input type="text" name="userName" id="userName" placeholder="User Name"> 
+            <span>Focus starts.. Write your name.</span>
+        </div>
+        
+        <div>
+            <input type="password" name="password" id="password" placeholder="Password"> 
+            <span>Focus starts.. Write your password.</span> 
+        </div>
+
+        <script src="assets/js/jQuery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $( "input" ).focus(function() {  
+                    $( this ).next( "span" ).fadeOut( 2000 );  
+                });
+                $( "input" ).blur(function() {  
+                    $( this ).next( "span" ).fadeIn( 2000 );  
+                });
+            });
+        </script>
+    </body>
+</html>

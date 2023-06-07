@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+        <style>  
+            .intro {  
+                background-color: brown;
+                text-align: center;
+                color: #fff;  
+                padding: 20px;
+            }  
+        </style> 
+    </head>
+    <body>
+        <center>
+            <h1>class</h1>
+        </center>
+        <hr>
+
+        <h1>This is a heading</h1>  
+        <p>This is a paragraph.</p>  
+        <p>This is another paragraph.</p>  
+        <p>This is another paragraph.</p>  
+
+        <hr>
+        
+        <button id="addClass">Click for addClass</button>  
+        <button id="hasClass">Click for hasClass</button>  
+        <button id="removeClass">Click for removeClass</button>  
+        <button id="toggleClass">Click for toggleClass</button>  
+
+        <script src="assets/js/jQuery.js"></script>
+        <script>
+            $(document).ready(function(){
+                jQuery("#addClass").click(function(){  
+                    $("p:first").addClass("intro");  
+                });
+                $("#removeClass").click(function(){  
+                    $("p:first").removeClass("intro");  
+                });
+                $("#hasClass").click(function(){  
+                    alert($("p:first").hasClass("intro")); 
+                });
+                $("#toggleClass").click(function(){  
+                    $("p").toggleClass("intro"); 
+                });
+            });
+        </script>
+    </body>
+</html>

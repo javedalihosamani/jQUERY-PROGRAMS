@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+    </head>
+    <body>
+        <center>
+            <h1>jQuery Event</h1>
+        </center>
+        <hr>
+
+        <h1 id="h1">Click this heading.</h1>
+        <h1 id="h2">Click this heading.</h1>
+        <hr>
+        
+        <p id="demo"></p>  
+        <script src="assets/js/jQuery.js"></script>   
+        <script>    
+            $(document).ready(function(){    
+                $("#h1").mousedown(function(){    
+                   $( "#demo" ).text( "mouse down event triggered" ).show().fadeOut( 2000 );   
+                });
+                $("#h2").mouseup(function(){    
+                   $( "#demo" ).text( "mouse up event triggered" ).show().fadeOut( 2000 );   
+                });
+            });     
+        </script> 
+    </body>
+</html>

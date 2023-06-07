@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+        <style>
+            p{
+                background-color: brown;
+                padding: 20px;
+                color: #fff;
+                margin: 20px;
+            } 
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>fadeIn()</h1>
+            <h1>fadeOut()</h1>
+            <h1>fadeToggle()</h1>
+            <h1>fadeTo()</h1>
+        </center>
+        <hr>
+
+        <button id="fadeIn">fadeIn</button>  
+        <button id="fadeOut">fadeOut</button>
+        <button id="fadeToggle">fadeToggle</button>        
+        <button id="fadeTo">Fade To</button>
+        <hr>
+
+        <h3>This is a little poem..!</h3>
+        <p>Twinkle, twinkle, little star</p>
+        <p>How I wonder what you are</p>
+        <p>How I wonder what you are</p>
+        <p>How I wonder what you are</p>
+        <p>How I wonder what you are</p>
+        <p>Up above the world so high</p>
+        <p>Like a diamond in the sky</p>
+        <p>Twinkle, twinkle little star</p>
+        <p>How I wonder what you are</p>
+
+        <script src="assets/js/jQuery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#fadeIn').click(function(){
+                    $("p").fadeIn("slow"); //slow, fast, 2000
+                });
+                $('#fadeOut').click(function(){
+                    $("p").fadeOut("fast"); //slow, fast, 2000
+                });
+                $('#fadeToggle').click(function(){
+                    $("p").fadeToggle(2000); //slow, fast, 2000
+                });
+                $('#fadeTo').click(function(){
+                    $("p").fadeTo(2000, 0.6); //slow, fast, 2000
+                });
+            });
+        </script>
+    </body>
+</html>

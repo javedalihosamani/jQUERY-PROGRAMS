@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+    </head>
+    <body>
+        <center>
+            <h1>jQuery Event</h1>
+        </center>
+        <hr>
+
+        <p>Hover your mouse pointer on me!</p>  
+        <hr>
+        
+        <script src="assets/js/jQuery.js"></script>  
+        <script>  
+            $(document).ready(function(){  
+                $("p").hover
+                (
+                    function()
+                    {  
+                        $(this).css("background-color", "violet");  
+                    }, 
+                    function()
+                    {  
+                        $(this).css("background-color", "green");  
+                    }
+                );  
+            });  
+        </script>  
+    </body>
+</html>

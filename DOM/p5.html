@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+    </head>
+    <body>
+        <p>This is first paragraph.</p>
+        <p>This is second paragraph.</p>
+        <p id="test">This is third paragraph.</p>
+        <b>This is first BOLD..!</b>
+        <script src="assets/js/jQuery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("p").css("background-color", "red");
+                $("p").css("color", "#fff");
+                $("#test").css({
+                    "font-size":"30px",
+                    "padding":"20px"
+                });
+
+                $("b").attr({
+                    "style":"border:2px solid red",
+                    "name" : "testAttr",
+                    "id":"testID"
+                });
+            });
+        </script>
+    </body>
+</html>

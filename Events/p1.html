@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+    </head>
+    <body>
+        <center>
+            <h1>jQuery Event</h1>
+        </center>
+        <hr>
+
+        <h2>Click on the statement.</h2>
+        <script src="assets/js/jQuery.js"></script>
+        <script>
+            $(document).ready(function(){
+                /*$("h2").click(function(){
+                    alert("This is Alert Method..!");
+                });
+                $("h2").mouseenter(function(){
+                    alert("This is Alert Method..!");
+                });*/
+                $("h2").bind("click mouseenter",function(){
+                    alert("This is Alert Method..!");
+                });
+            });
+        </script>
+    </body>
+</html>

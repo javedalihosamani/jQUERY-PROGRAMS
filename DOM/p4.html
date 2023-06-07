@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+    </head>
+    <body>
+        <center>
+            <h1>val()</h1>
+        </center>
+        <hr>
+
+        <h3></h3>
+        <select>
+            <option value="null">Choose city name</option>
+            <option value="bengaluru">Bengaluru</option>
+            <option value="chennai">Chennai</option>
+            <option value="mysuru">Mysuru</option>
+            <option value="mumbai">Mumbai</option>
+        </select>
+
+        <script src="ASSETS/js/jQuery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('select').change(function(){
+                    let name = $("select").val(); // .value
+
+                    if(name == "null"){
+                        $("h3").text('Choose valid city');
+                    } else{
+                        $("h3").text(name);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

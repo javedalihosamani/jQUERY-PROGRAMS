@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+        <style>
+            p{
+                background-color: brown;
+                padding: 20px;
+                color: #fff;
+                display: none;
+            } 
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>show()</h1>
+            <h1>hide()</h1>
+            <h1>toggle()</h1>
+        </center>
+        <hr>
+
+        <button type="button" id="show">Show</button>
+        <button type="button" id="hide">Hide</button>
+        <button type="button" id="toggle">Toggle</button>
+        <hr>
+
+        <h3>This is a little poem..!</h3>
+        <p>Twinkle, twinkle, little star</p>
+        <p>How I wonder what you are</p>
+        <p>How I wonder what you are</p>
+        <p>How I wonder what you are</p>
+        <p>How I wonder what you are</p>
+        <p>Up above the world so high</p>
+        <p>Like a diamond in the sky</p>
+        <p>Twinkle, twinkle little star</p>
+        <p>How I wonder what you are</p>
+
+        <script src="assets/js/jQuery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#show').click(function(){
+                    $("p").show("slow"); //slow, fast, 2000
+                });
+                $('#hide').click(function(){
+                    $("p").hide("fast"); //slow, fast, 2000
+                });
+                $('#toggle').click(function(){
+                    $("p").toggle(2000); //slow, fast, 2000
+                });
+            });
+        </script>
+    </body>
+</html>

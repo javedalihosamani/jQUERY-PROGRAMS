@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+    </head>
+    <body>
+        <center>
+            <h1>jQuery Event</h1>
+        </center>
+        <hr>
+
+        <button id="btn">Single Click</button>
+        <button id="btn1">Double Click</button>
+        
+        <script src="assets/js/jQuery.js"></script>  
+        <script>  
+            $(document).ready(function(){  
+                $("#btn").click(function(){
+                    alert("this is click function");
+                });
+
+                $("#btn1").dblclick(function(){
+                    alert("this is double click function");
+                });
+            });  
+        </script>  
+    </body>
+</html>

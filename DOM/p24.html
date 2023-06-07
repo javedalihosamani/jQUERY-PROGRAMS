@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+        <style>
+            div{
+                background-color: dodgerblue;
+                color: #fff;
+                text-align: center;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>innerHeight() and innerWidth()</h1>
+        </center>
+        <div>
+            <h1>Hello</h1>
+            <p>This is JQ..!</p>
+            <p>This is JQ..!</p>
+            <p>This is JQ..!</p>
+            <p>This is JQ..!</p>
+            <p>This is JQ..!</p>
+            <p>This is JQ..!</p>
+            <p>This is JQ..!</p>
+            <p>This is JQ..!</p>
+            <p>This is JQ..!</p>
+        </div>
+        
+        <button type="button" id="height">Outer Height</button>
+        <button type="button" id="width">Outer Width</button>
+        
+        <script src="assets/js/jQuery.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                $("#height").click( function(){
+                    alert($("div").outerHeight());
+                });
+                $("#width").click( function(){
+                    alert($("div").outerWidth());
+                });
+            });
+        </script>
+    </body>
+</html>

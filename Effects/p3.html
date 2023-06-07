@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+        <style>
+            div{
+                background-color: grey;
+                padding: 20px;
+                margin: 20px;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>slideDown()</h1>
+            <h1>slideUp()</h1>
+            <h1>slideToggle()</h1>
+        </center>
+        <hr>
+
+        <button id="slideDown">SLIDE DOWN</button>
+        <button id="slideUp">SLIDE UP</button>
+        <button id="slideToggle">SLIDE Toggle</button>
+        <hr>
+        
+        <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet fuga quisquam ullam, fugit voluptatem hic. Consectetur odio amet, officiis at, vitae esse deserunt, quam eum quos exercitationem aliquam nam laboriosam! Lore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex error officia at velit libero repudiandae commodi numquam animi? Quae veniam quibusdam sapiente voluptatibus sunt nesciunt perspiciatis laborum officia incidunt enim.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet fuga quisquam ullam, fugit voluptatem hic. Consectetur odio amet, officiis at, vitae esse deserunt, quam eum quos exercitationem aliquam nam laboriosam! Lore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex error officia at velit libero repudiandae commodi numquam animi? Quae veniam quibusdam sapiente voluptatibus sunt nesciunt perspiciatis laborum officia incidunt enim.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet fuga quisquam ullam, fugit voluptatem hic. Consectetur odio amet, officiis at, vitae esse deserunt, quam eum quos exercitationem aliquam nam laboriosam! Lore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex error officia at velit libero repudiandae commodi numquam animi? Quae veniam quibusdam sapiente voluptatibus sunt nesciunt perspiciatis laborum officia incidunt enim.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet fuga quisquam ullam, fugit voluptatem hic. Consectetur odio amet, officiis at, vitae esse deserunt, quam eum quos exercitationem aliquam nam laboriosam! Lore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex error officia at velit libero repudiandae commodi numquam animi? Quae veniam quibusdam sapiente voluptatibus sunt nesciunt perspiciatis laborum officia incidunt enim.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet fuga quisquam ullam, fugit voluptatem hic. Consectetur odio amet, officiis at, vitae esse deserunt, quam eum quos exercitationem aliquam nam laboriosam! Lore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex error officia at velit libero repudiandae commodi numquam animi? Quae veniam quibusdam sapiente voluptatibus sunt nesciunt perspiciatis laborum officia incidunt enim.</p>
+        </div>
+
+        <script src="assets/js/jQuery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#slideDown").click(function(){
+                    $("div").slideDown(1500);
+                });
+                $("#slideUp").click(function(){
+                    $("div").slideUp(1500);
+                });
+                $("#slideToggle").click(function(){
+                    $("div").slideToggle(1500);
+                });
+            });
+        </script>
+    </body>
+</html>

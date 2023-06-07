@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+        <style>
+            div{
+                border: 2px solid #222;
+                padding: 20px;
+                line-height: 2;
+                text-align: justify;
+                width: 150px;
+                height: 150px;
+                overflow: auto;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>scrollTop()</h1>
+        </center>
+        <hr>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta vitae maxime excepturi aut esse quas ipsum qui est eos in aliquid aperiam fugit doloribus consequatur tempore, repudiandae natus culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non maxime amet sequi? Aliquam, cumque! Libero necessitatibus dolorem neque optio nam, placeat enim, perspiciatis maiores non rem laborum nisi! Molestias, culpa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo repellat, quos soluta molestias eligendi quod maxime odio blanditiis itaque dolore est non voluptates dolorem omnis aliquid magni ipsam! Soluta, eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque pariatur placeat voluptatibus repellendus quo voluptatem magni non repellat? Earum deleniti accusantium laborum animi consequatur. Fugit voluptas fuga itaque. Excepturi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem facere debitis dolore aliquid itaque neque porro non hic molestiae, minima corrupti dignissimos possimus recusandae. Provident ipsa vitae aliquam eum vero!</p>
+        </div>
+
+        <hr>
+
+        <h3></h3>
+
+        <script src="assets/js/jQuery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("div").scroll(function(){
+                    let c = $("div").scrollTop();
+                    $("h3").text(Math.floor(c), "px");
+                });
+            });
+        </script>
+    </body>
+</html>

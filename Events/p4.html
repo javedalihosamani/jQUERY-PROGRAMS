@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+    </head>
+    <body>
+        <center>
+            <h1>jQuery Event</h1>
+        </center>
+        <hr>
+        <select>
+            <option>Uthappa</option>
+            <option selected="selected">Kattapa</option>
+            <option>Veerappa</option>
+            <option>Bahubali</option>
+            <option>Bhallal Dev</option>
+            <option>Awantika</option>
+        </select>
+        <h2 id="result"></h2>
+        <script src="assets/js/jQuery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("select").change(function(){
+                    document.getElementById("result").innerHTML = $("select").val();
+                });
+            });
+        </script>
+    </body>
+</html>

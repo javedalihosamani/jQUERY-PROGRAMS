@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+    </head>
+    <body>
+        <center>
+            <h1>jQuery Selector..!</h1>
+            <p>jQuery selector enables you to find DOM elements in your web page.</p>
+        </center>
+        <hr>
+
+        <h2>There are 4 Options to select an elements</h2>
+        <ol>
+            <li>using element Name</li>
+            <li>using element ID</li>
+            <li>using element Attribute</li>
+            <li>Using Attribute value</li>
+        </ol>
+
+        <hr>
+        <h2>1) Using element Name Example..!</h2>
+        <b>This is First B tag..! </b>
+
+        <script src="assets/js/jQuery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("b").append("This is a First append Method...!");
+            });
+        </script>
+
+        <hr>
+        <h2>2) Using element ID Example..!</h2>
+        <b id="second">This is Second B tag..!</b>
+        <script>
+            $(document).ready(function(){
+                $('#second').append("This is a Second append Method...!");
+            });
+        </script>
+
+        <hr>
+        <h2>3) Using element Attribute Example..!</h2>
+        <div class=""></div>
+        <script>
+            $(document).ready(function(){
+                $('[class]').append("This element has class attribute..!");
+            });
+        </script>
+
+        <hr>
+        <h2>4) Using element Attribute value Example..!</h2>
+        <div class="demo"></div>
+        <script>
+            $(document).ready(function(){
+                $('[class="demo"]').append("This element includes class=demo class attribute..!");
+            });
+        </script>
+    </body>
+</html>
